@@ -8,6 +8,12 @@ The Timer app is still a bit rough around the corners and has some things hard-c
 
 Prerequisites: qt5 and [oscpack](https://github.com/dimitry-ishenko-casparcg/oscpack).
 
+For oscpack use
+
+    make install
+
+to install libary to //usr/local/lib and //usr/local/include/
+
 To compile, simply run:
 
     qmake
