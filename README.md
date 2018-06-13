@@ -6,20 +6,39 @@ The Timer app is still a bit rough around the corners and has some things hard-c
 
 ![Screenshot](screenshot.png)
 
-Prerequisites: qt5 and [oscpack](https://github.com/dimitry-ishenko-casparcg/oscpack).
+## Prerequisites: 
 
-For oscpack use
+qt5 and [oscpack](https://github.com/dimitry-ishenko-casparcg/oscpack).
 
+Install qt5 and libqtsvg:
+
+    apt-get install qt5-qmake qt5-default libqt5svg5-dev
+
+Install oscpack 
+
+    git clone https://github.com/dimitry-ishenko-casparcg/oscpack.git
+
+    make
     make install
 
 to install libary to //usr/local/lib and //usr/local/include/
 
-To compile, simply run:
+## Compile timer
+
+    git clone https://github.com/herzogmedia/timer.git
+
+To compile timer, simply run:
 
     qmake
     make
 
-Supported options:
+If libraries are not found run
+    
+    ldconfig
+    
+ The timer will not run headless from ssh-sessions. 
+
+## Supported options:
 
     --full    Run in full screen mode
     --blink   Blink current video time in red, when the countdown reaches 30 seconds.
